@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Boggle!</title>
+</head>
+<body>
+
+    <main id="content">
+        {% block content %}{% endblock %}
+        <section id="score-total"><p id="score" class="hide"></p></section>
+        <section id="#high-score">High Score: {{highscore}}</section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/ajax.js"></script>
+    <script src="static/score.js"></script>
+</body>
+</html>

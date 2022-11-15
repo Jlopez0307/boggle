@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    top: 10rem;
+}
+
+#content #game-board ul{
+   list-style: none;
+}
+
+
+.hide {
+    visibility: hidden;
+}

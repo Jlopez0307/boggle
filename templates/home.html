@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+    <h1>Boggle!</h1>
+
+    <table>
+        <tbody class="game-board">
+            {% for row in game%}
+                <tr>
+                    {% for cell in row%}
+                        <td>{{cell}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <form action="/guess" method="POST" id="guess-form" class="hide">
+
+        <label for="guess">
+            <input type="text" name="guess" id="guess-input">
+        </label>
+        <button>Guess</button>
+
+    </form>
+    <button id="start-btn">Start Game!</button>
+
+    <div id="results"></div>
+
+{%endblock%}
